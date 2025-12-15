@@ -116,7 +116,7 @@ def main():
             ou.draw_scanline(frame, scan_y, color=ou.NEON_CYAN, thickness=2)
 
             # glitch header
-            ou.draw_glitch_text(frame, 'AI FACE EMOTION & PERSONA OVERLAY', pos=(20, 40))
+            ou.draw_glitch_text(frame, 'Lasya AI FACE EMOTION & PERSONA OVERLAY', pos=(20, 40))
 
             # FPS
             now = time.time()
@@ -125,7 +125,7 @@ def main():
             fps_smooth = fps_smooth * 0.85 + fps * 0.15
             ou.draw_fps(frame, fps_smooth)
 
-            cv2.imshow('AI Face Persona', frame)
+            cv2.imshow('LAI Face Persona', frame)
 
             key = cv2.waitKey(1) & 0xFF
             # interactive controls
